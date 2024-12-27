@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "outDir": "./dist",
+        "rootDir": "./",
+        "resolveJsonModule": true
+    },
+    "include": [
+        "server.ts",
+        "public/js/script.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

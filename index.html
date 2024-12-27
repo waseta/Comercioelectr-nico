@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>My E-commerce</h1>
+      <div class="cart-container">
+        <img src="ecommerce-product-page-main/design/active-states-basket-empty.jpg" alt="Cart" id="cart-icon">
+        <div class="cart-items">0</div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-gallery">
+      <img src="ecommerce-product-page-main/design/desktop-design.jpg" alt="Product Image" id="main-image">
+      <div class="thumbnails">
+        <img src="ecommerce-product-page-main/design/active-states-lightbox.jpg" alt="Thumbnail 1" class="thumbnail">
+        <img src="ecommerce-product-page-main/design/active-states-basket-filled.jpg" alt="Thumbnail 2"
+          class="thumbnail">
+      </div>
+    </section>
+
+    <section class="product-details">
+      <h2>Product Name</h2>
+      <p class="price">$99.99</p>
+      <p class="description">This is a sample description of the product, highlighting key features and benefits.</p>
+
+      <div class="cart-actions">
+        <button id="decrease">-</button>
+        <input type="text" id="quantity" value="1">
+        <button id="increase">+</button>
+        <button id="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
