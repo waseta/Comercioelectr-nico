@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #333;
+    color: #00081b;
 }
 
 header {
@@ -25,12 +25,16 @@ header h1 {
 .cart-container {
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: flex-end;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .cart-container img {
-    width: 30px;
+    width: 40px;
     cursor: pointer;
+    margin-right: 0;
 }
 
 .cart-items {
@@ -41,7 +45,7 @@ header h1 {
     font-size: 12px;
     position: absolute;
     top: -5px;
-    right: -10px;
+    right: 0;
 }
 
 /* Product Gallery */
@@ -50,7 +54,7 @@ header h1 {
     flex-direction: column;
     align-items: center;
     margin: 20px;
-    background: #fff;
+    background: url('images/image-product-2-thumbnail.jpg') no-repeat center center/cover;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -100,10 +104,50 @@ header h1 {
     color: #1a1a1a;
 }
 
+.price-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
 .price {
     font-size: 24px;
     color: green;
-    margin: 10px 0;
+    margin: 0;
+}
+
+.discount-form {
+    display: flex;
+    gap: 10px;
+}
+
+#discount-code {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#apply-discount {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#apply-discount:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+#discount-message {
+    font-size: 14px;
+    color: green;
 }
 
 .description {
@@ -146,25 +190,4 @@ header h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .product-gallery #main-image {
-        width: 90%;
-    }
-
-    .thumbnails img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .product-details {
-        padding: 15px;
-    }
-
-    .cart-actions button {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
 }
